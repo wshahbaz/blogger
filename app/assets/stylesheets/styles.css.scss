@@ -34,3 +34,36 @@ a {
   clear: both;
   padding-top: 20px;
 }
+
+ #sideNav {
+    position: absolute;
+    top: 85px;
+    left: -70px;
+
+    height: 250px;
+    width: 150px;
+
+    float: left;
+    vertical-align: center;
+    margin-right: 50px;
+
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    border-radius: 25px;
+} 
+
+#sideNav ul {
+    padding-top: 20px;
+}
+
+#sideNav li{
+    font-size: 1.2em;
+    font-style: "Arial";
+    text-align: center;
+}
+
+#sideNav p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}

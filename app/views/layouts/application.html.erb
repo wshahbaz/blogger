@@ -10,7 +10,33 @@
   </head>
 
   <body>
-    <p class = "flash"> <%= flash.notice %> </p>
-    <%= yield %>
+
+    <p class = "flash"> 
+      <%= flash.notice %> 
+    </p>
+
+    <div id="sideNav">
+      <p> <strong> Navigation Links </strong> </p>
+      <ul>
+        <li> <%= link_to "All Articles", articles_path %> </li>
+        <li> <%= link_to "All Tags", tags_path %> </li>
+        <li> <%= link_to "All Authors", authors_path %> </il>
+      </ul>
+    </div>
+
+    <div id="container">
+      <div id="content">
+        <%= yield %>
+        <hr>
+        <h6>
+          <% if logged_in? %>
+            <%= "Logged in as #{current_user.email}" %>
+            <%= link_to "(logout)", logout_path %>
+          <% else %>
+            <%= link_to "(login)", login_path %>
+          <% end %>
+        </h6>
+      </div>
+    </div>
   </body>
 </html>

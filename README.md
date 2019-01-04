@@ -1,24 +1,7 @@
-# README
+# Blogger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an interactive web blog that allows user create, comment, and add pictures to a blog website, with basic authentication.
 
-Things you may want to cover:
+It was created as a practice program towards learning ruby on rails and full-stack programming fundamentals.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The blog can be accessed here: https://murmuring-cove-95128.herokuapp.com/
